@@ -26,8 +26,8 @@ final class NewsApiProvider
         retry: null,
         name: r'newsApiProvider',
         isAutoDispose: false,
-        dependencies: null,
-        $allTransitiveDependencies: null,
+        dependencies: <ProviderOrFamily>[],
+        $allTransitiveDependencies: <ProviderOrFamily>[],
       );
 
   @override
@@ -52,4 +52,4 @@ final class NewsApiProvider
   }
 }
 
-String _$newsApiHash() => r'c10bf7775676a598d03dda923108dd47913a58b0';
+String _$newsApiHash() => r'4a74d5a3e74da61161f80b4cd6b1d9a8dce4159d';

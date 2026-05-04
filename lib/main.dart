@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:riverpod_annotation/experimental/scope.dart';
 
 import 'core/router/app_router.dart';
 
+@Dependencies([appRouter])
 void main() {
   // ProviderScope 是 Riverpod 的根容器，所有 Provider 都需要它。
   runApp(const ProviderScope(child: NewsApp()));
 }
 
 /// 应用根组件，负责挂载主题和路由。
+@Dependencies([appRouter])
 class NewsApp extends ConsumerWidget {
   const NewsApp({super.key});
 
